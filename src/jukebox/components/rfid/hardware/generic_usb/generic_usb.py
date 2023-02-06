@@ -206,7 +206,7 @@ class ReaderClass(ReaderBaseClass):
                                   end='' if key != 'KEY_ENTER' else '\n',
                                   flush=True)
 
-                    if key == 'KEY_ENTER':
+                    if key == 'KEY_SLASH':
                         return card_uid[:-1]
 
             except BlockingIOError:
